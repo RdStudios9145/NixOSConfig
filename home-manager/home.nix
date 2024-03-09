@@ -59,6 +59,7 @@
   home.packages = with pkgs; [
     steam
     blender
+    firefox
   ];
 
   # Enable home-manager and git
