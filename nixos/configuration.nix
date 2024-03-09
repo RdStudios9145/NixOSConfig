@@ -66,7 +66,7 @@
 
   environment.systemPackages = with pkgs; [
     libsForQt5.qtstyleplugin-kvantum
-    libgcc
+    gcc.cc.libgcc
   ];
 
   nix.settings = {
