@@ -77,10 +77,11 @@
 
   # TODO: Set your hostname
   networking.hostName = "NixOS";
+  networking.networkmanager.enable = true;
 
   # TODO: This is just an example, be sure to use whatever bootloader you prefer
-  boot.loader.systemd-boot.enable = false;
-  boot.loader.grub.device = "nodev";
+  boot.loader.systemd-boot.enable = true;
+  # boot.loader.grub.device = "nodev";
 
   services.xserver.desktopManager.plasma5 = {
     enable = true;
