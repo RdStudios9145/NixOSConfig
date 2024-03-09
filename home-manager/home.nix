@@ -56,7 +56,6 @@
   # Add stuff for your user as you see fit:
   programs.neovim.enable = true;
   programs.neovim.defaultEditor = true;
-  programs.steam.enable = true;
   home.packages = with pkgs; [
     blender
     firefox
