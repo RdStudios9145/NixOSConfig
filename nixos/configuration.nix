@@ -74,6 +74,7 @@
   };
 
   # FIXME: Add the rest of your current configuration
+  programs.steam.enable = true;
 
   # TODO: Set your hostname
   networking.hostName = "NixOS";
