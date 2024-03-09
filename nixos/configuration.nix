@@ -64,7 +64,10 @@
     })
     config.nix.registry;
 
-  environment.systemPackages = with pkgs; [ libsForQt5.qtstyleplugin-kvantum ];
+  environment.systemPackages = with pkgs; [
+    libsForQt5.qtstyleplugin-kvantum
+    libgcc
+  ];
 
   nix.settings = {
     # Enable flakes and new 'nix' command
