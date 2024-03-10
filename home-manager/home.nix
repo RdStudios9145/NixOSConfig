@@ -58,7 +58,6 @@
   programs.neovim.defaultEditor = true;
   home.packages = with pkgs; [
     blender
-    firefox
   ];
 
   # Enable home-manager and git

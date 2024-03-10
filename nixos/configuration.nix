@@ -68,6 +68,7 @@
     libsForQt5.qtstyleplugin-kvantum
     gcc.cc.libgcc
     xclip
+    firefox
   ];
 
   nix.settings = {
