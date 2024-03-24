@@ -109,6 +109,13 @@
     pulse.enable = true;
   };
 
+  i18n = {
+    supportedLocales = [ "en_US.UTF-8" "en_SE.UTF-8" ];
+    extraLocaleSettings = {
+      LC_TIME = "en_SE.UTF-8";
+    };
+  };
+
   # TODO: Configure your system-wide user settings (groups, etc), add more users as needed.
   users.users = {
     # FIXME: Replace with your username
