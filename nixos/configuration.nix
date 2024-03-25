@@ -126,7 +126,12 @@
     };
   };
 
-  hardware.opengl.enable = true;
+  hardware.opengl = {
+    enable = true;
+    extraPackages = [ pkgs.mesa.drivers ];
+    driSupport = true;
+    driSupport32Bit = true;
+  };
 
   # This setups a SSH server. Very important if you're setting up a headless system.
   # Feel free to remove if you don't need it.
