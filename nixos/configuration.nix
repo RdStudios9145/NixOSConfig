@@ -128,7 +128,7 @@
 
   hardware.opengl = {
     enable = true;
-    extraPackages = [ pkgs.mesa.drivers ];
+    extraPackages = with pkgs; [ mesa.drivers intel-media-driver intel-ocl ];
     driSupport = true;
     driSupport32Bit = true;
   };
