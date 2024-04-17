@@ -90,9 +90,9 @@
   boot.loader.systemd-boot.enable = true;
   # boot.loader.grub.device = "nodev";
 
-  # services.xserver.desktopManager.plasma5 = {
-  #   enable = true;
-  # };
+  services.xserver.desktopManager.plasma5 = {
+    enable = true;
+  };
 
   # services.xserver.displayManager.sddm = {
   #   wayland.enable = true;
@@ -102,7 +102,7 @@
 
   # programs.xwayland.enable = true;
 
-  # services.xserver.enable = true;
+  services.xserver.enable = true;
 
   security.rtkit.enable = true;
   services.pipewire = {
@@ -151,8 +151,10 @@
   };
 
   services.flatpak.enable = true;
-  programs.hyprland.enable = true;
   programs.fish.enable = true;
+  programs.hyprland = {
+    enable = true;
+  };
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "23.05";
