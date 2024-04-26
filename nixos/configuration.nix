@@ -70,7 +70,12 @@
     xclip
     firefox
     kitty
+    dunst
+    hyprpaper
+    xdg-desktop-portal-hyprland
+    wofi
   ];
+
 
   nix.settings = {
     # Enable flakes and new 'nix' command
@@ -154,6 +159,7 @@
   programs.fish.enable = true;
   programs.hyprland = {
     enable = true;
+    xwayland.enable = true;
   };
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
